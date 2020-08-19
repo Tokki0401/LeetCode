@@ -2,7 +2,11 @@
  * @param {number[]} nums
  * @return {number}
  */
-var majorityElement = function(nums) {
+
+// Hashing Method
+// Time O(n), Space(n)
+
+ var majorityElement = function(nums) {
   var majority = Math.ceil(nums.length / 2);
   var reference = {};
 
@@ -26,3 +30,7 @@ var majorityElement = function(nums) {
 // [2,2,2,4]
 // [1,2,1,2,1]
 // [-1, -1, 3]
+
+
+// Moore Voting Method
+// Time O(n), Space(1)
